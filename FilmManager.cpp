@@ -1,7 +1,6 @@
 #include "FilmManager.h"
 
 void FilmManager::findByName(string& name) {
-	cout << "run" << endl;
 	for(int i = 0; i < this->length; i++) {
 		string namecmp = (this->typeList + i)->getName();
 		char* nametmp = const_cast<char*>(namecmp.c_str());
