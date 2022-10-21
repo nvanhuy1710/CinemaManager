@@ -9,6 +9,8 @@ using namespace std;
 class Time
 {
 	public:
+		Time();
+		Time(int, int, int);
 		int getDate() const;
 		int getMonth() const;
 		int getYear() const;
@@ -18,7 +20,9 @@ class Time
 		void readfilet(fstream&);
     	void writefilet(fstream&);
     	void writet();
-    	bool checkEqual(Time);
+    	bool operator==(const Time& time2);
+    	bool operator>=(const Time& time2);
+    	bool operator<=(const Time& time2);
 	private:
 		int date;
 		int month;

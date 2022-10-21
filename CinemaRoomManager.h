@@ -10,6 +10,7 @@ class CinemaRoomManager : public Manager<CinemaRoom>
 {
 	public:
 		CinemaRoom setCinemaRoomInfor();
+		void update();
 	protected:
 };
 

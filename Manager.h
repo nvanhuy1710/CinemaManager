@@ -4,6 +4,8 @@
 #include <string.h>
 #include "Schedule.h"
 #include "Ticket.h"
+#include "CinemaRoom.h"
+#include "Film.h"
 
 using namespace std;
 
@@ -16,7 +18,6 @@ class Manager
 		void del(const string&);
 		void showAll();
 		type* findById(const string&);
-		void update(const type&);
 		int getLength();
 		void setLength(const int&);
 		Manager();
@@ -26,8 +27,5 @@ class Manager
 		type* typeList;
 		int length;
 };
-
-//template class Manager<Schedule>;
-//template class Manager<Ticket>;
 
 #endif

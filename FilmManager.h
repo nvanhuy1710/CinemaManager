@@ -11,6 +11,7 @@ class FilmManager : public Manager<Film>
 	public:
 		void findByName(string&);
 		Film setFilmInfor();
+		void update();
 	private:
 };
 

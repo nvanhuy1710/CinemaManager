@@ -1,8 +1,5 @@
 #include "Manager.h"
 
-//template class Manager<Schedule>;
-//template class Manager<Ticket>;
-
 template <class type>
 Manager<type>::Manager() {
 	this->length = 0;
@@ -61,12 +58,6 @@ void Manager<type>::showAll() {
 }
 
 template <class type>
-void Manager<type>::update(const type& ty) {
-	//del(ty.getId());
-	add(ty);
-}
-
-template <class type>
 int Manager<type>::getLength() {
 	return this->length;
 }
@@ -81,6 +72,8 @@ type* Manager<type>::getTypeList() {
 	return this->typeList;
 }
 
-template class Manager<Schedule>;
 template class Manager<Ticket>;
+template class Manager<Schedule>;
+template class Manager<Film>;
+template class Manager<CinemaRoom>;
 

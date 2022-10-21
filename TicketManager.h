@@ -9,11 +9,11 @@ class TicketManager : public Manager<Ticket>
 	public:
 		void getRevenue();
 		void getRevenue(string);
-		void getRevenue(Time&);
+		void getRevenue(Time&, Time&);
 		TicketManager(ScheduleManager&);
 		Ticket setTicketInfor();
 	private:
-		ScheduleManager scheduleList;
+		ScheduleManager* scheduleList;
 };
 
 #endif
